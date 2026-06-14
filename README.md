@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 视频下载 Agent Skill
 
 通过 Cursor Agent 下载 YouTube 上公开视频的工具集。
@@ -88,3 +89,7 @@ python -m scripts.video_fetch download <视频URL> --format <format_id>
 - 只支持公开视频，不支持需要登录的内容。
 - 大小估算是近似值，最终以下载后实际大小为准。
 - 当前不支持播放列表自动下载（必须先询问用户）。
+=======
+# videos_downloader
+This is a agent skill that can download videos from youtube.
+>>>>>>> aa0fcc339734c507f5fb81adfb7240f16fd6915d

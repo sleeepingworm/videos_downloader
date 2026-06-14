@@ -1,0 +1,24 @@
+# 视频下载工具使用规则
+
+当用户给出 YouTube URL 并表达下载意图时，按以下流程操作。
+
+## 流程
+
+1. 运行 `python -m scripts.video_fetch inspect <url>` 解析视频信息。
+2. 展示标题、时长、可用质量列表、预计大小、磁盘剩余空间。
+3. 让用户选择质量或取消。
+4. 用户确认后运行 `python -m scripts.video_fetch download <url> --format <format_id> --output-dir <path>`。
+5. 告知用户保存路径和实际大小。
+
+## 禁止
+
+- 禁止静默下载。必须先展示信息并等待用户确认。
+- 禁止批量下载播放列表。遇到列表先询问范围。
+- 磁盘空间不足时禁止继续下载。
+
+## 错误处理
+
+- `unsupported_url` → URL 不支持
+- `dependency_missing` → 缺少依赖，给出安装命令
+- `auth_required` → 需要登录，不支持
+- `download_failed` → 展示错误摘要，不重试
