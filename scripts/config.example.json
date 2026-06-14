@@ -1,0 +1,9 @@
+{
+  "_说明": "首次运行后请复制此文件为 config.json 并修改配置",
+  "download_dir": "C:/Users/icos/Desktop/work_prepare/agent_skill/downloads",
+  "filename_template": "%(title)s.%(ext)s",
+  "max_file_size_mb": 4096,
+  "proxy": null,
+  "cookie_file": null,
+  "preferred_container": "mp4"
+}

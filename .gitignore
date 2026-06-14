@@ -1,0 +1,13 @@
+# GitHub 发布 — 排除开发文件和用户数据
+
+tasks/
+tests/
+DEVLOG.md
+reference.md
+downloads/
+scripts/config.json
+__pycache__/
+*.pyc
+*.pyo
+.DS_Store
+Thumbs.db
